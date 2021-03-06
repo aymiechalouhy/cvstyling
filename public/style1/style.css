@@ -18,8 +18,8 @@ header > div{
 }
 .content{
   display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 #about, #competencies, #experiences, #education, #hobbies{
   width: 50%;
@@ -88,8 +88,6 @@ span{
   font-weight: 300;
 }
 
-
-
 h4{
   margin-bottom: 0px;
 }
@@ -106,6 +104,7 @@ h4{
 p{
   margin-right: 5%;
 }
+
 h3::before{
   content: " ";
   height: 15px;
@@ -114,12 +113,14 @@ h3::before{
   border-radius: 50%;
   display: inline-block;
   justify-content: center;
+
   margin-right:3px ;
 }
 h3{
   border-bottom: solid 2px lightgray;
   padding-bottom: 5px;
 }
+
 section#contact > h3{
   display: none;
 }
@@ -129,17 +130,14 @@ section#contact > h3{
   right: 10px;
   width: 50%;
   height: 22%;
-  
-  
 }
 .contact{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-content: flex-end;
-  
-  
 }
+
 .contact-type{
   color: azure;
   width: 30%;
@@ -165,57 +163,10 @@ dd{
   margin-left: 0;
   padding: 3px;
 }
-
 .experience-location::before{
   content: "in";
 }
 .experience-location::after{
   content: "on";
 }
-hgroup{color: red;}
   
-@media only screen and (max-width: 650px){
-
-  .content{
-    display: flex;
-      flex-direction: column;
-      margin: 5%;
-  }
-  #about, #competencies, #experiences, #education, #hobbies{
-    width: 100%;
-}
-
-section#contact > h3{
-  display: flex;
-}
-
-#contact{
-  position: relative;
-  top: unset;
-  right: unset;
-  width: 100%;
-  
-  
-  
-}
-.contact-type{
-  color: azure;
-  width: 50%;
-  background-color: rgb(255, 0, 0);
-}
-.contact-value{
-  
-  background-color: white;
-}
-.contact-value{
-  color: black;
-}
-dt{
-  margin:  0px;
-  padding: 3px;
-}
-dd{
-  margin-left: 0;
-  padding: 3px;
-}
-}
